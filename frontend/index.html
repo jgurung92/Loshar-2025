@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Application Form</h2>
+    <form id="applicationForm">
+      <label for="category">Choose Category:</label>
+      <select id="category" name="category" required>
+        <option value="">Select...</option>
+        <option value="dancers">Dancers</option>
+        <option value="singers">Singers</option>
+      </select> <br><br>
+
+      <label for="names">Enter Names:</label>
+      <textarea id="names" name="names" placeholder="Enter up to 10 names, separated by commas" required></textarea>
+      <br><br>
+      <label for="media">Upload Video/Audio or Enter Link:</label>
+      <input type="file" id="mediaUpload" name="media" accept="audio/*,video/*">
+      <input type="url" id="mediaLink" name="mediaLink" placeholder="Enter URL (optional)">
+      <br><br>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="responseMessage"></p>
+  </div>
+  <script src="loshar.js"></script>
+</body>
+</html>
